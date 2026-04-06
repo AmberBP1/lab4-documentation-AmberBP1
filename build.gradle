@@ -31,3 +31,34 @@ application { //Allows  ./gradlew run --args=path-to-test-data
     mainClass = 'edu.odu.cs.MostCommonWords'
 }
 
+tasks.register('copyHtml', Copy) {
+    from 'src/main/html'
+    into "$buildDir/reports"
+}
+
+tasks.register('copyDocs', Copy) {
+    dependsOn javadoc
+    from "$buildDir/docs/javadoc"
+    into "$buildDir/reports/javadoc"
+}
+
+tasks.register('reports') {
+    dependsOn build, test, copyHtml, copyDocs
+}
+
+gitPublish {
+    repoUri = 'git@github.com:Old-Dominion-Univ-CS350/lab4-documentation-AmberBP1.git'
+    branch = 'gh-pages'
+
+    contents {
+        from("$buildDir/reports")
+    }
+}
+
+tasks.register('deployReports') {
+    dependsOn reports, gitPublishPush
+}
+
+tasks.named("gitPublishCopy") {
+    dependsOn reports
+}

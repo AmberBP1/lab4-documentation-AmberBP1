@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.ajoberstar.grgit",
+    "module": "grgit-core",
+    "version": "5.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy",
+          "version": {
+            "requires": "3.0.17"
+          }
+        },
+        {
+          "group": "org.eclipse.jgit",
+          "module": "org.eclipse.jgit",
+          "version": {
+            "requires": "6.5.0.202303070854-r"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "grgit-core-5.2.0.jar",
+          "url": "grgit-core-5.2.0.jar",
+          "size": 265555,
+          "sha512": "f4663da6560fbf50ad31cf6146371ce950430f8ed7eee397e12a51281e33880e21b276d79878094d3d8e5e4d63a90c16d7cf3593e768d344d689b7674142ff09",
+          "sha256": "4ee42ffb82604e8d48205e3865b7a9f631e9838668147fb5b5b6fa7433c696ac",
+          "sha1": "a7eb514c93f5e055b1038eb3d735a242adee6442",
+          "md5": "7e70ba9e49df81307405d8713538e497"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy",
+          "version": {
+            "requires": "3.0.17"
+          }
+        },
+        {
+          "group": "org.eclipse.jgit",
+          "module": "org.eclipse.jgit",
+          "version": {
+            "requires": "6.5.0.202303070854-r"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "grgit-core-5.2.0.jar",
+          "url": "grgit-core-5.2.0.jar",
+          "size": 265555,
+          "sha512": "f4663da6560fbf50ad31cf6146371ce950430f8ed7eee397e12a51281e33880e21b276d79878094d3d8e5e4d63a90c16d7cf3593e768d344d689b7674142ff09",
+          "sha256": "4ee42ffb82604e8d48205e3865b7a9f631e9838668147fb5b5b6fa7433c696ac",
+          "sha1": "a7eb514c93f5e055b1038eb3d735a242adee6442",
+          "md5": "7e70ba9e49df81307405d8713538e497"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "grgit-core-5.2.0-javadoc.jar",
+          "url": "grgit-core-5.2.0-javadoc.jar",
+          "size": 311818,
+          "sha512": "07390239f36791b85db3aa823e625e5eb90c1b2c4134ee01fe03fb8eebf495409aac0bfca60d1763c22d29d6b66e1d5dcc93c717ca9be72d4cda0728177de594",
+          "sha256": "d2f3d07da02f22171809c2cca4b96b0dcb2c2ef44724418695e6a7d4589c1ce0",
+          "sha1": "5e4bde1f95d7818fa4392a8dc1ddde9f09e64014",
+          "md5": "5a7a87b1414d54f69d6a6426637dd337"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "grgit-core-5.2.0-sources.jar",
+          "url": "grgit-core-5.2.0-sources.jar",
+          "size": 51161,
+          "sha512": "b9856957b9256e3042cdf526ed87cc1251d023f42051c9e29eac644a287a9e3c7f96433b1a7ec258eed130da6af03bd18c58114de9b01366a126c7159fd5a8cf",
+          "sha256": "d6dd130e5e996d2a6653256419322900ac6ba6d38c700bfe27b47606e5b7ada7",
+          "sha1": "392a71c18cfa49ff267f5a46631244fde11713b0",
+          "md5": "b8e15fffdbe07cec406737b4a967c321"
+        }
+      ]
+    }
+  ]
+}

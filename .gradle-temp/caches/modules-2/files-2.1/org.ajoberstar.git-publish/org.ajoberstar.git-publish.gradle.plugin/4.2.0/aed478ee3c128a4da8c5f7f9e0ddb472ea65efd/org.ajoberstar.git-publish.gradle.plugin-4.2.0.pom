@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ajoberstar.git-publish</groupId>
+  <artifactId>org.ajoberstar.git-publish.gradle.plugin</artifactId>
+  <version>4.2.0</version>
+  <packaging>pom</packaging>
+  <name>Git Publish Plugin</name>
+  <description>Gradle plugin for publishing to Git repositories</description>
+  <url>https://github.com/ajoberstar/gradle-git-publish</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Andrew Oberstar</name>
+      <email>ajoberstar@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:ajoberstar/gradle-git-publish.git</connection>
+    <developerConnection>scm:git:ssh:git@github.com:ajoberstar/gradle-git-publish.git</developerConnection>
+    <url>https://github.com/ajoberstar/gradle-git-publish</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.ajoberstar.git-publish</groupId>
+      <artifactId>gradle-git-publish</artifactId>
+      <version>4.2.0</version>
+    </dependency>
+  </dependencies>
+</project>
